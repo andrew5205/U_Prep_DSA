@@ -16,10 +16,14 @@ basket.sort(function ( a, b) {
     return a - b;       // [1, 2, 2, 7, 8, 34, 65]
 })
 
+// basket.sort( (a,b) => a-b);
 
-function ( a, b) {
+
+basket.sort(function( a, b) {
     return b - a;       // [65, 34, 8, 7, 2, 2, 1]
-}
+})
+
+// basket.sort( (a,b) => b-a);
 
 console.log(basket);
 
@@ -30,3 +34,5 @@ console.log(basket);
 // Selection sort 
 // Merge sort 
 // Quicj sort
+
+
