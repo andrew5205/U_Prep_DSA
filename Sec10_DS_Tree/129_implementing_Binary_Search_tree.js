@@ -62,6 +62,33 @@ class BinarySearchTree {
     }
 
 
+
+
+    // lookup
+    lookup(value) {
+        // if root not exist
+        if ( !this.root) {
+            return false;
+        }
+        // runner 
+        let currentNode = this.root; 
+
+        // three possible:  >, <, =
+        // while runner exist
+        while( currentNode ) {
+            if ( value < currentNode.value) {
+                currentNode = currentNode.left;
+            } else if ( value > currentNode.value) {
+                currentNode = currentNode.right;
+            } else if (currentNode.value == value) {
+                return currentNode;
+            } 
+        }
+        return false;
+    }
+
+
+
 }
 
 
