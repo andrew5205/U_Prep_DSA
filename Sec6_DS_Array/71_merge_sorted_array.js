@@ -24,6 +24,8 @@ function mergeTwoArr(arr1, arr2) {
             output[current] = arr1[i];
             i++;
         } else {
+            // (arr2.length || arr[i] > arr2[j])
+            // if arr2.length exist, || arr1 > arr2
             output[current] = arr2[j];
             j++;
         }
